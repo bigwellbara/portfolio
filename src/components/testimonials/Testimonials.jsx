@@ -14,7 +14,7 @@ SwiperCore.use([Pagination]);
 const Testimonials = () => {
   return (
     <section id="testimonials">
-      <h5>Review from team</h5>
+      <h5>Review from my team</h5>
       <h2>Testimonials</h2>
 
       <Swiper
