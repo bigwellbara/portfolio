@@ -1,5 +1,5 @@
 
-name: Deply Using Github Actions
+name: Deploy Using Github Actions
 
 on:
   push:
@@ -27,7 +27,8 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
 
+
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-          folder: build 
+          folder: build
