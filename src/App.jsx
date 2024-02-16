@@ -13,7 +13,6 @@ const App = () => {
     return(
         //import all the components here
         //use react fragements
-
         <>
         <Header/>
         <Nav/>
@@ -26,7 +25,7 @@ const App = () => {
         <Footer/>
         </>
 
-        // <div>App</div>
+      
     )
 }
 
