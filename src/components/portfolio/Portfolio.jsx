@@ -1,9 +1,9 @@
 import React from 'react'
 import './portfolio.css'
-import IMG2 from '../../assets/2.jpg'
+import IMG2 from '../../assets/2.png'
 import IMG3 from '../../assets/3.png'
 import IMG4 from '../../assets/4.png'
-import IMG5 from '../../assets/5.jpg'
+import IMG5 from '../../assets/5.png'
 
 // const data = [
 //     {
@@ -33,7 +33,7 @@ const Portfolio =()=>{
                     </div>
                     <h3>This is  an online application for RCU</h3>
                     <div className="portfolio_item-cta">
-                    <a href="https://github.com" className="btn" target='_blank'>RCU Online Application</a>
+                    <a href="https://http://portal.rcu.ac.zw:7002/login.com" className="btn" target='_blank'>RCU Online Application</a>
                   
                     </div>
                 </article>
@@ -55,7 +55,7 @@ const Portfolio =()=>{
                     </div>
                     <h3>This is  a student portal for RCU</h3>
                     <div className="portfolio_item-cta">
-                    <a href="https://github.com" className="btn" target='_blank'>RCU Student Portal</a>
+                    <a href="https://http://portal.rcu.ac.zw:7003/login.com" className="btn" target='_blank'>RCU Student Portal</a>
                 
                     </div>
                 </article>
