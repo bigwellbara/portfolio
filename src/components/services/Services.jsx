@@ -8,7 +8,7 @@ const Services =()=>{
         <section id="services">
             <h5>What I Offer</h5>
             <h2>Services</h2>
-
+           
             <container className="services_container">
                 <article className="service">
                     <div className="service_head">
@@ -18,37 +18,39 @@ const Services =()=>{
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            User research and Information architecture
                             </p>
                         </li>
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            User testing and training
                             </p>
                         </li>
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            Wireframing and Prototyping
                             </p>
                         </li>
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            Visual and Interaction design
                             </p>
                         </li>
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            Usability evaluation and User experience optimization
                             </p>
                         </li>
 
 
                     </ul>
                 </article>
+
+                
                 <article className="service">
                     <div className="service_head">
                         <h3>Web Development</h3>
@@ -57,45 +59,34 @@ const Services =()=>{
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            Front-End Development: Building the client-side of the website using HTML, CSS, and JavaScript for a responsive and interactive user interface.
                             </p>
                         </li>
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            Back-End Development: Creating the server-side of the website, including database management and server-side programming languages.
                             </p>
                         </li>
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            Content Management System (CMS) Integration: Customizing and integrating CMS platforms for easy content management.
                             </p>
                         </li>
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            Testing and Quality Assurance: Conducting thorough testing to identify and fix any bugs or performance issues.
                             </p>
                         </li>
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            Maintenance and Support: Providing ongoing maintenance, updates, and support services for the website.
                             </p>
                         </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                               I will do the design for you,dummy data!.
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                               I will do the design for you,dummy data!.
-                            </p>
-                        </li>
+                       
 
 
                     </ul>
@@ -109,35 +100,48 @@ const Services =()=>{
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            Requirement Analysis: Understanding client and business needs.
                             </p>
                         </li>
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            System Architecture Design: Creating the high-level structure of the system.
                             </p>
                         </li>
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            Hardware and Software Design: Selecting components and developing software architecture.
                             </p>
                         </li>
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            Database and Interface Design: Creating the database structure and designing user interactions.
                             </p>
                         </li>
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                               I will do the design for you,dummy data!.
+                            Security and Network Design: Implementing security features and planning network infrastructure.
                             </p>
                         </li>
 
-
+                        <li>
+                            <BiCheck className='service_list-icon' />
+                            <p>
+                            Prototyping and Testing: Building prototypes and conducting thorough testing.
+                            </p>
+                        </li>
+                        <li>
+                            <BiCheck className='service_list-icon' />
+                            <p>
+                            Documentation: Creating comprehensive system specifications and technical documentation.
+                            </p>
+                        </li>
+                    
+                    
                     </ul>
                 </article>
             </container>

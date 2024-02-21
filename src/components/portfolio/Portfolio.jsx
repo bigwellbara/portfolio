@@ -45,7 +45,7 @@ const Portfolio =()=>{
                     <h3>This is  an ERP for RCU</h3>
                     <div className="portfolio_item-cta">
                   
-                    <a href="https://github.com" className="btn btn-primary" target='_blank'>View Project Details</a>
+                    <a href="https://lnkd.in/e3aqunrE.com" className="btn btn-primary" target='_blank'>View Project Details</a>
                     </div>
                 </article>
 
