@@ -33,7 +33,7 @@ const Portfolio =()=>{
                     </div>
                     <h3>This is  an online application for RCU</h3>
                     <div className="portfolio_item-cta">
-                    <a href="https://http://portal.rcu.ac.zw:7002/login.com" className="btn" target='_blank'>RCU Online Application</a>
+                    <a href="http://portal.rcu.ac.zw:7002/login" className="btn" target='_blank'>RCU Online Application</a>
                   
                     </div>
                 </article>
@@ -55,7 +55,7 @@ const Portfolio =()=>{
                     </div>
                     <h3>This is  a student portal for RCU</h3>
                     <div className="portfolio_item-cta">
-                    <a href="https://http://portal.rcu.ac.zw:7003/login.com" className="btn" target='_blank'>RCU Student Portal</a>
+                    <a href="http://portal.rcu.ac.zw:7003/login" className="btn" target='_blank'>RCU Student Portal</a>
                 
                     </div>
                 </article>
