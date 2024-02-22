@@ -112,7 +112,7 @@ const Services =()=>{
                         <li>
                             <BiCheck className='service_list-icon' />
                             <p>
-                            Hardware and Software Design: Selecting components and developing complete software architecture.
+                            Hardware and Software Design: Selecting components and developing software architecture.
                             </p>
                         </li>
                         <li>
