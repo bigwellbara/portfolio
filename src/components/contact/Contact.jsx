@@ -14,7 +14,7 @@ const Contact = ()=>{
     
         emailjs.sendForm('service_9a65kt8', 'template_14wg7i7', form.current, 'b3W_whgvipyr5tjgb')
           e.target.reset()
-        //   B03200575...
+    
        
       };
     return(
@@ -39,8 +39,7 @@ const Contact = ()=>{
                     <article className="contact_option">
                         <BsWhatsapp className="contact_option-icon"/>
                         <h4>Whatsapp</h4>
-                        {/* <h5>+263 779 787 091</h5> */}
-                        <a href="https://api.whatsapp.com/send?phone+263779787091" target="_blank">Send a message</a>
+                        <a href="https://api.whatsapp.com/send?phone=263779787091" target="_blank">Send a message</a>
                     </article>
                 </div>
                 <form ref={form} onSubmit={sendEmail}>
