@@ -66,7 +66,7 @@ const Testimonials = () => {
           <small className="team_review">
           Working with Baramasimbe Bigwell has been a game-changer for our team. His exceptional problem-solving skills and attention to detail 
           have elevated the quality and efficiency of our projects. Baramasimbe Bigwell 
-          consistently demonstrates strong leadership and technical expertise, making hime a valuable asset to any software development team.
+          consistently demonstrates strong leadership and technical expertise, making him a valuable asset to any software development team.
           </small>
         </SwiperSlide>
 

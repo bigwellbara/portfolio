@@ -66,7 +66,7 @@ const Portfolio =()=>{
                     </div>
                     <h3>This is  my first react application</h3>
                     <div className="portfolio_item-cta">
-                    <a href="https://github.com" className="btn" target='_blank'>Tic Tac</a>
+                    <a href="https://bigwellbara.github.io/monsters-rolodex/" className="btn" target='_blank'>Tic Tac</a>
         
                     </div>
                 </article>
