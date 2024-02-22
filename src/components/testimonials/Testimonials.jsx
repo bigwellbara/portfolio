@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import './testimonials.css'
 import TEAM from '../../assets/profile0.jpg'
 
@@ -22,6 +22,20 @@ const Testimonials = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
 
+  const swiperRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    if (swiperRef.current && swiperRef.current.autoplay) {
+      swiperRef.current.autoplay.stop();
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (swiperRef.current && swiperRef.current.autoplay) {
+      swiperRef.current.autoplay.start();
+    }
+  };
+
   return (
     <section id="testimonials">
       <h5>Review from my team</h5>
@@ -33,10 +47,13 @@ const Testimonials = () => {
         slidesPerView={1}
         autoplay={{
           delay: 3000,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
+        allowTouchMove={false} // Prevent user interactions from stopping the autoplay
         navigation={true}
         pagination={{ clickable: true }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <SwiperSlide className="testimonial">
           <div className="team_avatar">
