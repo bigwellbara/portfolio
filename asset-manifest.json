@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.620ac982.css",
-    "main.js": "/portfolio/static/js/main.58d20242.js",
+    "main.css": "/portfolio/static/css/main.85074b23.css",
+    "main.js": "/portfolio/static/js/main.34580293.js",
     "static/media/profile0.jpg": "/portfolio/static/media/profile0.60f523de73e8c6370d89.jpg",
     "static/media/baramasimbe-cv.pdf": "/portfolio/static/media/baramasimbe-cv.8101a2d448d49a21a060.pdf",
     "static/media/me.png": "/portfolio/static/media/me.a1a94af2a944a99a0bfc.png",
@@ -12,11 +12,11 @@
     "static/media/about-me.jpg": "/portfolio/static/media/about-me.754232217349ceebad59.jpg",
     "static/media/tech-tip3.jpeg": "/portfolio/static/media/tech-tip3.eff531968cf22cc1113c.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.620ac982.css.map": "/portfolio/static/css/main.620ac982.css.map",
-    "main.58d20242.js.map": "/portfolio/static/js/main.58d20242.js.map"
+    "main.85074b23.css.map": "/portfolio/static/css/main.85074b23.css.map",
+    "main.34580293.js.map": "/portfolio/static/js/main.34580293.js.map"
   },
   "entrypoints": [
-    "static/css/main.620ac982.css",
-    "static/js/main.58d20242.js"
+    "static/css/main.85074b23.css",
+    "static/js/main.34580293.js"
   ]
 }
