@@ -36,18 +36,17 @@ const About = () => {
                     </article>
                   
                 </div>
-                <p>
-                    I am a proactive and skilled Software Developer, specializing in hands-on development, 
-                    design, and rigorous testing of software across diverse platforms. My professional
-                     journey has provided me with practical exposure to the entire software development 
-                     lifecycle. Collaborating seamlessly within cross-functional teams, I have contributed to 
-                     the creation of innovative applications that captivate users and drive tangible business
-                      outcomes. My proficiency extends to adhering to design standards and tailoring solutions
-                       to user preferences. My portfolio showcases a spectrum of projects, from initial ideation
-                        to polished execution. My commitment to excellence is evident in my coding expertise, 
-                    which I consistently refine to stay attuned to the dynamic landscape of technological advancements.
-                     
-                    </p>
+              <div className="about-me-section">
+  <h2>About Me</h2>
+  <ul className="about-me-list">
+    <li>Full-Stack Developer skilled in <strong>C#, ASP.NET Core, and Laravel</strong>.</li>
+    <li>Experienced in building scalable web apps and RESTful APIs.</li>
+    <li>Strong in software design patterns and clean architecture.</li>
+    <li>Hands-on with the full software development lifecycle.</li>
+    <li>Collaborates well in Agile teams and delivers user-focused solutions.</li>
+  </ul>
+</div>
+
                     <a href="#contact" className="btn btn-primary">Let's Talk</a>
 
             </div>

@@ -64,6 +64,30 @@
     color: var(--color-light);
 }
 
+.about-me-section {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-me-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+ 
+}
+
+.about-me-list {
+  list-style-type: disc;
+  padding-left: 20px;
+ 
+  line-height: 1.6;
+}
+
+.about-me-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
 /* ====Media queries (Medium devices)===== */
 
 @media screen and (max-width:1024px) {
