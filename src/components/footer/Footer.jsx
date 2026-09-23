@@ -3,7 +3,7 @@ import './footer.css'
 import { BsLinkedin } from 'react-icons/bs'
 import { FaGithub } from 'react-icons/fa'
 
-const CV = `${process.env.PUBLIC_URL}/BIGWELL_BARAMASIMBE_CV.pdf`
+const CV = 'BIGWELL_BARAMASIMBE_CV.pdf'
 
 const Footer = () => {
     return (
