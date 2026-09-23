@@ -1,76 +1,109 @@
 .experience_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
 .experience_container > div {
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
+    padding: 1.5rem 1.3rem;
+    border-radius: 1.2rem;
+    border: 1px solid var(--line);
 }
 
-.experience_container > div:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-}
-
-.experience_container > div h3 {
-    text-align: center;
-    margin-bottom: 2rem;
+.experience_container > div h3,
+.career h3 {
+    margin-bottom: 1.1rem;
     color: var(--color-primary);
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    font-weight: 700;
 }
 
 .experience_content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    gap: 0.85rem;
 }
 
 .experience_details {
     display: flex;
-    gap: 1rem;
+    gap: 0.7rem;
+    align-items: flex-start;
+}
+
+.experience_details h4 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 0.98rem;
+    letter-spacing: 0;
 }
 
 .experience_details-icon {
-    margin-top: 6px;
+    margin-top: 3px;
+    color: var(--color-mint);
+    flex-shrink: 0;
+}
+
+.career {
+    margin-top: 1.4rem;
+    background: var(--color-bg-variant);
+    border: 1px solid var(--line);
+    border-radius: 1.2rem;
+    padding: 1.5rem 1.6rem 0.4rem;
+}
+
+.role {
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    gap: 1rem;
+    padding: 1.15rem 0 1.3rem;
+    border-top: 1px solid var(--line);
+}
+
+.role_when {
     color: var(--color-primary);
+    font-size: 0.88rem;
+    font-weight: 600;
 }
 
-/* ====Media queries (Medium devices)===== */
-
-@media screen and (max-width:1024px) {
-.experience_container {
-    grid-template-columns: 1fr;
+.role_title {
+    font-size: 1.35rem;
 }
 
-.experience_container > div {
-    width: 80%;
-    padding: 2rem;
-    margin: 0 auto;
+.role_org {
+    color: var(--color-mint);
+    margin: 0.15rem 0 0.55rem;
 }
- 
-.experience_content {
-    padding: 1rem;
+
+.role li {
+    color: var(--color-light);
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.35rem;
 }
-  
- }
- 
- /* ====Media queries (Small devices)===== */
- 
- @media screen and (max-width:600px) {
+
+.role li::before {
+    content: "";
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+}
+
+@media screen and (max-width: 1024px) {
     .experience_container {
-        gap: 1rem;
-
+        grid-template-columns: 1fr;
     }
+}
 
-    .experience_container > div {
-        width: 100%;
-        padding: 2rem 1rem;
+@media screen and (max-width: 700px) {
+    .role {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
     }
-
- }
- 
+}
