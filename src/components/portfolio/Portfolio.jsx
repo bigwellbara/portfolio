@@ -65,8 +65,8 @@ const Portfolio = () => {
                                 <img src={project.image} alt={project.title} />
                             ) : (
                                 <div>
-                                    <span>{project.org}</span>
-                                    <strong>{project.title}</strong>
+                                    <span>Shipped</span>
+                                    <strong>{project.org}</strong>
                                 </div>
                             )}
                         </div>

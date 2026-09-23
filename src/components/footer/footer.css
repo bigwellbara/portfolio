@@ -1,7 +1,7 @@
 footer {
     background: #10182a;
     border-top: 1px solid var(--line);
-    padding: 3.2rem 8% 6rem;
+    padding: 3.2rem 8% 3rem;
     text-align: center;
     margin-top: 7rem;
 }
@@ -71,6 +71,6 @@ footer {
     }
 
     footer {
-        padding-bottom: 7rem;
+        padding-bottom: 7.5rem;
     }
 }

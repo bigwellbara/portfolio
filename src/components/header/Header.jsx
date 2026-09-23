@@ -35,8 +35,8 @@ const Header = () => {
                             <span>Azure APIs deployed with zero downtime</span>
                         </li>
                         <li>
-                            <strong>2.1</strong>
-                            <span>Computer Science · Vice Chancellor’s Award</span>
+                            <strong>Award</strong>
+                            <span>Vice Chancellor’s prize, BSc Computer Science</span>
                         </li>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@ const Header = () => {
             </div>
 
             <div className="techstrip" aria-label="Core technologies">
-                <div className="techstrip_track">
+                <div className="techstrip_track" aria-hidden="true">
                     {[...stack, ...stack].map((item, index) => (
                         <span key={`${item}-${index}`}>{item}</span>
                     ))}
