@@ -8,74 +8,85 @@
     text-decoration: none;
 }
 
-:root{
-    --color-bg:#1f1f38;
-    --color-primary:#4db5ff;
-    --color-bg-variant:#2c2c6c;
-    --color-primary-variant:rgba(77,181,255,0.4);
-    --color-white:#fff;
-    --color-light:rgba(255,255,255,0.6);
-    --container-width-lg:75%;
-    --container-width-md:86%;
-    --container-width-sm:90%;
-    --transition:all 400s ease;
+:root {
+    --color-bg: #0c1220;
+    --color-bg-variant: rgba(22, 32, 52, 0.86);
+    --color-primary: #e7b57a;
+    --color-primary-variant: rgba(231, 181, 122, 0.45);
+    --color-white: #f6f1e8;
+    --color-light: #b7c0ce;
+    --color-mint: #8fd0c6;
+    --color-ink: #1a140c;
+    --line: rgba(246, 241, 232, 0.12);
+    --container-width-lg: 76%;
+    --container-width-md: 88%;
+    --container-width-sm: 92%;
+    --transition: all 220ms ease;
+    --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
 }
 
 html {
     scroll-behavior: smooth;
-
 }
 
-::-webkit-scrollbar{
-    display: none;
-}
-
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: var(--color-bg);
+body {
+    font-family: 'Outfit', 'Segoe UI', sans-serif;
+    background:
+        radial-gradient(900px 480px at 8% -10%, rgba(231, 181, 122, 0.16), transparent 55%),
+        radial-gradient(760px 420px at 100% 0%, rgba(143, 208, 198, 0.12), transparent 48%),
+        var(--color-bg);
     color: var(--color-white);
-    line-height: 1.7;
-    background-image: url(../src/assets/tech-tip3.jpeg);
+    line-height: 1.65;
+    min-height: 100vh;
 }
 
-/*======General Styles =======*/
-
-.container{
+.container {
     width: var(--container-width-lg);
     margin: 0 auto;
 }
 
-h1,h2,h3,h4,h5 {
-font-weight: 500;
+h1, h2, h3, .brand, .role_title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 560;
+    letter-spacing: -0.03em;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: clamp(2.6rem, 5vw, 4.4rem);
+    line-height: 1.05;
+}
+
+h2 {
+    font-size: clamp(2rem, 3vw, 2.7rem);
 }
 
 section {
-    margin-top: 8rem;
-    /* height: 100vh; */
+    margin-top: 7rem;
 }
 
-section > h2, section > h5 {
+section > h5,
+.eyebrow {
     text-align: center;
-    color: var(--color-light);
+    color: var(--color-primary);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
 }
 
 section > h2 {
-    color:var(--color-primary);
-    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--color-white);
+    margin: 0.45rem 0 2.4rem;
 }
 
 .text-light {
-    color: var(--color-primary);
-   
+    color: var(--color-light);
 }
 
 a {
     color: var(--color-primary);
-    transition: var(--transition) ;
+    transition: var(--transition);
 }
 
 a:hover {
@@ -84,52 +95,66 @@ a:hover {
 
 .btn {
     width: max-content;
-    display: inline-block;
-    color: var(--color-primary);
-    padding: 0.75rem 1.2rem;
-    border-radius: 0.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    color: var(--color-white);
+    padding: 0.85rem 1.3rem;
+    border-radius: 999px;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.03);
     transition: var(--transition);
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 0.95rem;
 }
 
 .btn:hover {
     background: var(--color-white);
-    color: var(--color-bg);
+    color: var(--color-ink);
     border-color: transparent;
 }
 
 .btn-primary {
-    background: var(--color-primary);
-    color: var(--color-bg);
+    background: linear-gradient(180deg, #f3d0a2, var(--color-primary));
+    color: var(--color-ink);
+    border-color: transparent;
+}
+
+.btn-primary:hover {
+    background: var(--color-white);
+    color: var(--color-ink);
 }
 
 img {
-display: block;
-width: 100%;
-object-fit: cover;
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
 
-/* ====Media queries (Medium devices)===== */
+.lede {
+    color: var(--color-light);
+    font-size: 1.05rem;
+}
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     .container {
         width: var(--container-width-md);
     }
 
     section {
-        margin-top: 6rem;
+        margin-top: 5.5rem;
     }
 }
 
-/* ====Media queries (small devices)===== */
-
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .container {
         width: var(--container-width-sm);
     }
 
     section > h2 {
-        margin-bottom: 2rem;
+        margin-bottom: 1.6rem;
     }
 }

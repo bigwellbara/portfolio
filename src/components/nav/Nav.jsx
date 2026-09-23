@@ -1,25 +1,57 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './nav.css'
-import {AiOutlineHome} from 'react-icons/ai'
-import {AiOutlineUser} from 'react-icons/ai'
-import {BiBook} from 'react-icons/bi'
-import {RiServiceLine} from 'react-icons/ri'
-import {BiMessageSquareDetail} from 'react-icons/bi'
-import {useState} from 'react'
+import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
+import { BiBook, BiMessageSquareDetail } from 'react-icons/bi'
+import { RiServiceLine } from 'react-icons/ri'
+import { BsBriefcase } from 'react-icons/bs'
 
+const links = [
+    { href: '#home', label: 'Home', icon: <AiOutlineHome /> },
+    { href: '#about', label: 'About', icon: <AiOutlineUser /> },
+    { href: '#experience', label: 'Experience', icon: <BiBook /> },
+    { href: '#services', label: 'Services', icon: <RiServiceLine /> },
+    { href: '#portfolio', label: 'Work', icon: <BsBriefcase /> },
+    { href: '#contact', label: 'Contact', icon: <BiMessageSquareDetail /> },
+]
 
-const Nav =()=>{
-    const [activeNav, setActiveNav]=useState('#')
+const Nav = () => {
+    const [activeNav, setActiveNav] = useState('#home')
+
     return (
-       <nav>
-<a href="#" onClick={()=>setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
-<a href="#about" onClick={()=>setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
-<a href="#experience" onClick={()=>setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook/></a>
-<a href="#services" onClick={()=>setActiveNav('#services')} className={activeNav=== '#services' ? 'active' :''}><RiServiceLine/></a>
-<a href="#contact" onClick={()=>setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' :''}><BiMessageSquareDetail/></a>
-{/* <a href="#portfolio">Portfolio</a>
-<a href="#testimonials">Testimonials</a> */}
-        </nav>
+        <>
+            <div className="topnav">
+                <a href="#home" className="brand" onClick={() => setActiveNav('#home')}>Bigwell</a>
+                <div className="topnav_links">
+                    {links.slice(1, 5).map((link) => (
+                        <a
+                            key={link.href}
+                            href={link.href}
+                            onClick={() => setActiveNav(link.href)}
+                            className={activeNav === link.href ? 'active' : ''}
+                        >
+                            {link.label}
+                        </a>
+                    ))}
+                </div>
+                <a href="#contact" className="btn btn-primary nav_hire" onClick={() => setActiveNav('#contact')}>
+                    Hire me
+                </a>
+            </div>
+
+            <nav>
+                {links.map((link) => (
+                    <a
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setActiveNav(link.href)}
+                        className={activeNav === link.href ? 'active' : ''}
+                        aria-label={link.label}
+                    >
+                        {link.icon}
+                    </a>
+                ))}
+            </nav>
+        </>
     )
 }
 

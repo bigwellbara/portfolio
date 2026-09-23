@@ -1,150 +1,63 @@
 import React from 'react'
 import './services.css'
-import {BiCheck} from 'react-icons/bi'
+import { BiCheck } from 'react-icons/bi'
 
-const Services =()=>{
+const offers = [
+    {
+        title: 'Product platforms',
+        lead: 'The system your organisation actually runs on.',
+        items: [
+            'ERPs, portals, and application workflows',
+            'React and Laravel interfaces people can use',
+            'External API integrations without the glue-code mess',
+            'Handover your team can maintain',
+        ],
+    },
+    {
+        title: 'APIs & cloud',
+        lead: 'Services that stay up when the product grows.',
+        items: [
+            'REST and GraphQL on ASP.NET Core',
+            'Worker services, queues, and CQRS',
+            'Azure, Kubernetes, Contabo VPS, ArgoCD',
+            'CI/CD so releases stop being a manual event',
+        ],
+    },
+    {
+        title: 'Secure delivery',
+        lead: 'Software and network designed together.',
+        items: [
+            'Sophos Firewall, VLANs, and SSL',
+            'Architecture reviews before the rewrite',
+            'Satellite, GIS, and weather data products',
+            'Agile delivery with a written trail',
+        ],
+    },
+]
+
+const Services = () => {
     return (
-      
         <section id="services">
-            <h5>What I Offer</h5>
-            <h2>Services</h2>
-           
-            <container className="services_container">
-                <article className="service">
-                    <div className="service_head">
-                        <h3>UI/UX Design</h3>
-                    </div>
-                    <ul className="service_list">
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            User research and Information architecture
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            User testing and training
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Wireframing and Prototyping
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Visual and Interaction design
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Usability evaluation and User experience optimization
-                            </p>
-                        </li>
-
-
-                    </ul>
-                </article>
-
-                
-                <article className="service">
-                    <div className="service_head">
-                        <h3>Web Development</h3>
-                    </div>
-                    <ul className="service_list">
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Front-End Development: Building the client-side of the website using HTML, CSS, and JavaScript for a responsive and interactive user interface.
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Back-End Development: Creating the server-side of the website, including database management and server-side programming languages.
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Content Management System (CMS) Integration: Customizing and integrating CMS platforms for easy content management.
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Testing and Quality Assurance: Conducting thorough testing to identify and fix any bugs or performance issues.
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Maintenance and Support: Providing ongoing maintenance, updates, and support services for the website.
-                            </p>
-                        </li>
-                       
-
-
-                    </ul>
-                </article>
-
-                <article className="service">
-                    <div className="service_head">
-                        <h3>System Design</h3>
-                    </div>
-                    <ul className="service_list">
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Requirement Analysis: Understanding client and business needs.
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            System Architecture Design: Creating the high-level structure of the system.
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Hardware and Software Design: Selecting components and developing complete software architecture.
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Database and Interface Design: Creating the database structure and designing user interactions.
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Security and Network Design: Implementing security features and planning network infrastructure.
-                            </p>
-                        </li>
-
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Prototyping and Testing: Building prototypes and conducting thorough testing.
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className='service_list-icon' />
-                            <p>
-                            Documentation: Creating comprehensive system specifications and technical documentation.
-                            </p>
-                        </li>
-                    
-                    
-                    </ul>
-                </article>
-            </container>
+            <h5>How I can help</h5>
+            <h2>What you get</h2>
+            <div className="container services_container">
+                {offers.map((offer) => (
+                    <article className="service" key={offer.title}>
+                        <div className="service_head">
+                            <h3>{offer.title}</h3>
+                            <p>{offer.lead}</p>
+                        </div>
+                        <ul className="service_list">
+                            {offer.items.map((item) => (
+                                <li key={item}>
+                                    <BiCheck className="service_list-icon" />
+                                    <p>{item}</p>
+                                </li>
+                            ))}
+                        </ul>
+                    </article>
+                ))}
+            </div>
         </section>
     )
 }

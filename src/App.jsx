@@ -10,22 +10,18 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 const App = () => {
-    return(
-        //import all the components here
-        //use react fragements
+    return (
         <>
-        <Header/>
-        <Nav/>
-        <About/>
-        <Experience/>
-        <Services/>
-        <Portfolio/>
-        <Testimonials/>
-        <Contact/>
-        <Footer/>
+            <Nav />
+            <Header />
+            <About />
+            <Experience />
+            <Services />
+            <Portfolio />
+            <Testimonials />
+            <Contact />
+            <Footer />
         </>
-
-      
     )
 }
 
