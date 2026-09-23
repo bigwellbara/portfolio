@@ -1,18 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.39348343.css",
-    "main.js": "/portfolio/static/js/main.42d137ae.js",
+    "main.js": "/portfolio/static/js/main.90dd7eb6.js",
     "static/media/me.png": "/portfolio/static/media/me.a1a94af2a944a99a0bfc.png",
     "static/media/3.png": "/portfolio/static/media/3.888bf574ea0d58147aa2.png",
-    "static/media/BIGWELL_BARAMASIMBE_CV.pdf": "/portfolio/static/media/BIGWELL_BARAMASIMBE_CV.5aec7cd0014faa7d476d.pdf",
     "static/media/2.png": "/portfolio/static/media/2.905f9240506a57e8d85c.png",
     "static/media/4.png": "/portfolio/static/media/4.89f7e692d09311e9e85a.png",
     "index.html": "/portfolio/index.html",
     "main.39348343.css.map": "/portfolio/static/css/main.39348343.css.map",
-    "main.42d137ae.js.map": "/portfolio/static/js/main.42d137ae.js.map"
+    "main.90dd7eb6.js.map": "/portfolio/static/js/main.90dd7eb6.js.map"
   },
   "entrypoints": [
     "static/css/main.39348343.css",
-    "static/js/main.42d137ae.js"
+    "static/js/main.90dd7eb6.js"
   ]
 }
