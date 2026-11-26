@@ -2,7 +2,8 @@ import React from 'react'
 import './footer.css'
 import { BsLinkedin } from 'react-icons/bs'
 import { FaGithub } from 'react-icons/fa'
-import CV from '../../assets/BIGWELL_BARAMASIMBE_CV.pdf'
+
+const CV = 'BIGWELL_BARAMASIMBE_CV.pdf'
 
 const Footer = () => {
     return (
@@ -21,7 +22,7 @@ const Footer = () => {
             </ul>
 
             <div className="footer_actions">
-                <a href={CV} download="BIGWELL_BARAMASIMBE_CV.pdf" className="btn">Download CV</a>
+                <a href={CV} target="_blank" rel="noreferrer" className="btn">Open CV</a>
                 <a href="#contact" className="btn btn-primary">Hire me</a>
             </div>
 

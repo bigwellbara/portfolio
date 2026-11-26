@@ -4,6 +4,17 @@ import IMG2 from '../../assets/2.png'
 import IMG3 from '../../assets/3.png'
 import IMG4 from '../../assets/4.png'
 
+const featured = {
+    title: 'Churn prediction platform',
+    org: 'Machine learning · Live',
+    summary: 'Predicts which telecom customers are about to leave, end to end: a tuned XGBoost model (ROC-AUC 0.85) tracked in MLflow, served by a FastAPI service in Docker, monitored with Prometheus and Grafana with data-drift detection, and shipped by CI/CD that tests the model, smoke tests production and rolls back automatically.',
+    tags: ['Python', 'XGBoost', 'scikit-learn', 'FastAPI', 'Docker', 'GitHub Actions', 'Prometheus'],
+    links: [
+        { label: 'Try the live API', href: 'https://churn-api-latest-ofya.onrender.com/docs', primary: true },
+        { label: 'Code', href: 'https://github.com/bigwellbara/churn-platform' },
+    ],
+}
+
 const projects = [
     {
         title: 'Satellite land intelligence',
@@ -58,6 +69,42 @@ const Portfolio = () => {
             <h5>Proof, not promises</h5>
             <h2>Selected work</h2>
             <div className="container portfolio_container">
+                <article className="portfolio_item is-featured">
+                    <div className="portfolio_item-image is-text is-live" aria-hidden="true">
+                        <div>
+                            <span><i className="live-dot" /> Live demo</span>
+                            <pre>{`POST /predict
+{ "tenure": 1, "Contract": "Month-to-month", ... }
+
+{ "churn_probability": 0.868,
+  "churn_prediction": true,
+  "risk_level": "high" }`}</pre>
+                        </div>
+                    </div>
+                    <div className="portfolio_featured-body">
+                        <p className="portfolio_org">{featured.org}</p>
+                        <h3>{featured.title}</h3>
+                        <p className="portfolio_summary">{featured.summary}</p>
+                        <ul className="tags">
+                            {featured.tags.map((tag) => (
+                                <li key={tag}>{tag}</li>
+                            ))}
+                        </ul>
+                        <div className="portfolio_item-cta">
+                            {featured.links.map((link) => (
+                                <a
+                                    key={link.href}
+                                    href={link.href}
+                                    className={`btn ${link.primary ? 'btn-primary' : ''}`}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {link.label}
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </article>
                 {projects.map((project) => (
                     <article className="portfolio_item" key={project.title}>
                         <div className={`portfolio_item-image ${project.image ? '' : 'is-text'}`}>

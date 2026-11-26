@@ -1,11 +1,12 @@
 import React from 'react'
-import CV from '../../assets/BIGWELL_BARAMASIMBE_CV.pdf'
+
+const CV = 'BIGWELL_BARAMASIMBE_CV.pdf'
 
 const CTA = () => {
     return (
         <div className="cta">
-            <a href={CV} download="BIGWELL_BARAMASIMBE_CV.pdf" className="btn">
-                Download CV
+            <a href={CV} target="_blank" rel="noreferrer" className="btn">
+                Open CV
             </a>
             <a href="#contact" className="btn btn-primary">Start a project</a>
             <a href="#portfolio" className="btn btn-ghost">See selected work</a>

@@ -2,7 +2,7 @@
   
   "name": "portfolio",
   
-  "homepage": "https://bigwellbara.github.io/portfolio",
+  "homepage": ".",
   
   "version": "0.1.0",
   
@@ -48,7 +48,7 @@
  
   "start": "react-scripts start",
 
-  "predeploy" : "npm run build",
+  "predeploy" : "npm run build && cp build/index.html build/404.html",
   "deploy" : "gh-pages -d build",
   
   
