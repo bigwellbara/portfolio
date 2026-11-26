@@ -7,10 +7,11 @@ import IMG4 from '../../assets/4.png'
 const featured = {
     title: 'Churn prediction platform',
     org: 'Machine learning · Live',
-    summary: 'Predicts which telecom customers are about to leave, end to end: a tuned XGBoost model (ROC-AUC 0.85) tracked in MLflow, served by a FastAPI service in Docker, monitored with Prometheus and Grafana with data-drift detection, and shipped by CI/CD that tests the model, smoke tests production and rolls back automatically.',
-    tags: ['Python', 'XGBoost', 'scikit-learn', 'FastAPI', 'Docker', 'GitHub Actions', 'Prometheus'],
+    summary: 'Predicts which telecom customers are about to leave and which retention offer would keep them, end to end: a tuned XGBoost model (ROC-AUC 0.85) tracked in MLflow, served by a FastAPI service in Docker, used through a Next.js dashboard, monitored with Prometheus and Grafana with data-drift detection, and shipped by CI/CD that tests the model, smoke tests production and rolls back automatically.',
+    tags: ['Python', 'XGBoost', 'scikit-learn', 'FastAPI', 'Next.js', 'Docker', 'GitHub Actions', 'Prometheus'],
     links: [
-        { label: 'Try the live API', href: 'https://churn-api-latest-ofya.onrender.com/docs', primary: true },
+        { label: 'Open the live demo', href: 'https://churn-platform-dusky.vercel.app', primary: true },
+        { label: 'API docs', href: 'https://churn-api-latest-ofya.onrender.com/docs' },
         { label: 'Code', href: 'https://github.com/bigwellbara/churn-platform' },
     ],
 }
