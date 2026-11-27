@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import AboutMe from '../../assets/me.png'
+import AboutMe from '../../assets/profile-2026.jpg'
 import { FaAward, FaShieldAlt } from 'react-icons/fa'
 import { HiOutlineCloud } from 'react-icons/hi'
 import { MdOutlineSchool } from 'react-icons/md'
