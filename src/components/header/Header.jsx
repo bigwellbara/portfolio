@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from '../../assets/me.png'
+import ME from '../../assets/profile-2026.jpg'
 import HeaderSocials from './HeaderSocials'
 
 const stack = ['C# / .NET Core', 'Laravel', 'React', 'GraphQL', 'Azure', 'Docker', 'ArgoCD', 'Python', 'CQRS']
