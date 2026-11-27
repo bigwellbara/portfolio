@@ -21,7 +21,7 @@ const roles = [
     {
         when: 'Aug 2026 — Present',
         title: 'Senior Software Engineer',
-        org: 'Earthasoft Technologies',
+        org: 'Afrostain Farmtech',
         points: [
             'Building a satellite land-intelligence product: soil and water mapping, field weather, and crop monitoring.',
             'Shipped a GIS prototype for field boundaries and a chatbot tool-calling runtime.',

@@ -5,7 +5,7 @@ import { BsQuote } from 'react-icons/bs'
 const reviews = [
     {
         name: 'Munemo Edmore',
-        role: 'Tech Lead, Earthasoft Technologies',
+        role: 'Tech Lead, Afrostain Farmtech',
         text: 'As a software developer, Baramasimbe Bigwell has consistently impressed us with his ability to tackle complex coding challenges with precision and creativity. His collaborative nature and expertise in multiple programming languages have significantly influenced the success of our team’s projects.',
     },
     {

@@ -21,7 +21,7 @@ const Header = () => {
                     </p>
                     <p className="lede">
                         Full-stack engineer with 4+ years across .NET Core, Laravel, React, and Azure.
-                        Currently leading product engineering on satellite land intelligence at Earthasoft —
+                        Currently leading product engineering on satellite land intelligence at Afrostain Farmtech —
                         soil, water, weather, and the pipelines that keep it live.
                     </p>
                     <CTA />
@@ -47,7 +47,7 @@ const Header = () => {
                     </div>
                     <div className="floating_card">
                         <span>Now</span>
-                        <p>Senior Software Engineer, Earthasoft Technologies</p>
+                        <p>Senior Software Engineer, Afrostain Farmtech</p>
                     </div>
                     <HeaderSocials />
                 </div>

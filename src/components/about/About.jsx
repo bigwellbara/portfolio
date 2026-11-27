@@ -42,7 +42,7 @@ const About = () => {
                     <p>
                         I take a product from a blank repository to something an organisation can run.
                         That means the API, the interface, the deployment, and the security around it.
-                        At Earthasoft I am building a satellite data platform for soil and water mapping,
+                        At Afrostain Farmtech I am building a satellite data platform for soil and water mapping,
                         field-level weather, and crop monitoring — including a GIS prototype and a chatbot
                         tool-calling runtime. Before that I delivered the ERP, student portal, and online
                         application system for Reformed Church University, and Azure REST and GraphQL
