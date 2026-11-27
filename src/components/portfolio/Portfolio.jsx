@@ -19,7 +19,7 @@ const featured = {
 const projects = [
     {
         title: 'Satellite land intelligence',
-        org: 'Earthasoft Technologies',
+        org: 'Afrostain Farmtech',
         image: null,
         summary: 'A production platform that turns satellite data into soil and water maps, field weather, and crop monitoring. Includes a GIS boundary prototype and a chatbot that can call tools inside the product.',
         tags: ['GIS', 'Satellite data', 'Python', 'Cloud VPS'],
